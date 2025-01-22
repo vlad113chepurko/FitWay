@@ -1,3 +1,5 @@
+// Main
+
 main {
     width: 100%;
     height: auto;
@@ -7,14 +9,15 @@ main {
     border: 1px solid red;
 }
 
-main h1 {
+.container__h1 {
     color: rgb(229, 183, 99);
     font-size: 80px;
 }
 
-main section p {
+.container__p {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    line-height: 40px;
     letter-spacing: 1.1px;
     color: white;
 }
@@ -53,4 +56,133 @@ main section p {
     border-radius: 5px;
 
     object-fit: cover;
+}
+
+// Beast container
+
+.beast-container {
+    width: 100%;
+    height: 800px;
+    @include flex();
+    justify-content: start;
+
+    padding-left: 10%;
+
+    background-image: url('../assets/back2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.beast__section {
+    border: 1px solid green;
+    width: auto;
+    height: auto;
+
+    padding: 10px;
+
+
+    text-align: left;
+
+    flex-direction: column;
+}
+
+.beast__section h1 {
+    color: white;
+    font-size: 70px;
+}
+
+.beast__section p {
+    font-size: 1.3rem;
+    width: 1200px;
+    line-height: 30px;
+    letter-spacing: 1.1px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.beast__section button {
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    font-size: 1.8rem;
+    background-color: rgb(229, 183, 99);
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 1.1px;
+
+    &:hover {
+        background-color: rgb(196, 158, 86);
+        color: white;
+    }
+
+    &:active {
+        background-color: rgb(161, 130, 72);
+    }
+}
+
+// Programs container
+
+.programs-container {
+    width: 100%;
+    border: 1px solid red;
+
+    @include flex();
+    flex-direction: column;
+
+    .program-title-container h1 {
+        font-size: 80px;
+        color: rgb(229, 183, 99);
+    }
+
+    .program-title-container p {
+        font-size: 1.3rem;
+        line-height: 40px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+.program-title-container {
+    width: 100%;
+    height: auto;
+
+    text-align: center;
+}
+
+.programs-wrapper {
+    width: auto;
+    height: auto;
+    border: 1px solid yellow;
+
+    padding: 10px;
+
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.programs__img-container {
+    text-align: left;
+
+    border-radius: 5px;
+    margin-bottom: 25px;
+
+
+    height: 300px;
+    width: 200px;
+}
+
+.programs__img-container img {
+    width: 200px;
+    height: 300px;
+
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+
+.programs__h1 {
+    font-size: 2rem;
+    color: rgb(229, 183, 99);
 }

@@ -38,6 +38,7 @@ header {
 .links__header {
     width: 50%;
     height: auto;
+    padding: 20px;
     border: 1px solid blue;
 
     @include flex();
@@ -52,7 +53,8 @@ header {
     margin: 20px;
 
     &:hover {
-        text-decoration: underline;
+        color: rgb(229, 183, 99);
+        cursor: pointer;
     }
 }
 

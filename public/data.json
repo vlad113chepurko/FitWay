@@ -1,0 +1,44 @@
+{
+    "images": [
+        {
+            "src": "./ProgramsAndSectionsImages/aerobica.jpg",
+            "alt": "aerobica",
+            "id": 1
+        },
+        {
+            "src": "./ProgramsAndSectionsImages/crossfit.jpg",
+            "alt": "crossfit",
+            "id": 2
+        },
+        {
+            "src": "./ProgramsAndSectionsImages/fitnes.jpg",
+            "alt": "fitnes",
+            "id": 3
+        },
+        {
+            "src": "./ProgramsAndSectionsImages/pilates.jpg",
+            "alt": "pilates",
+            "id": 4
+        },
+        {
+            "src": "./ProgramsAndSectionsImages/relief.jpg",
+            "alt": "relief",
+            "id": 5
+        },
+        {
+            "src": "./ProgramsAndSectionsImages/speeches.jpg",
+            "alt": "speeches",
+            "id": 6
+        },
+        {
+            "src": "./ProgramsAndSectionsImages/trainings.jpg",
+            "alt": "trainings",
+            "id": 7
+        },
+        {
+            "src": "./ProgramsAndSectionsImages/endurance.jpg",
+            "alt": "endurance",
+            "id": 8
+        }
+    ]
+}

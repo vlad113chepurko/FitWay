@@ -1,0 +1,39 @@
+.footer {
+    height: 200px;
+    background-color: rgb(60, 78, 93);
+    @include flex();
+}
+
+.footer-section {
+    width: auto;
+    height: auto;
+
+    @include flex();
+
+    flex-direction: column;
+}
+
+.footer-img {
+    width: 200px;
+    height: auto;
+
+    margin: 10px;
+
+    @include flex();
+}
+
+.footer-img img {
+    margin-right: 10px;
+}
+
+.footer-img a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 1.1px;
+    color: white;
+
+    &:hover {
+        color: rgb(229, 183, 99);
+    }
+}
