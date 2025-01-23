@@ -2,10 +2,11 @@ import trainer1 from '../assets/trainer1.jpg';
 import trainer2 from '../assets/trainer2.jpg';
 import trainer3 from '../assets/trainer3.jpg';
 
+import {  motion } from "motion/react";
+
 import { useEffect, useState } from 'react';
 
 import Form from './Form';
-
 
 export default function Main() {
 
@@ -23,45 +24,75 @@ export default function Main() {
     return (
         <main>
             <section className='margin-bottom'>
-                <h1 className='container__h1'>PERSONAL TRAINERS</h1>
-                <p className='container__p'>Our trainers will help you achieve your goals!
+                <motion.h1
+                    initial={{ opacity: 0, fontSize: '10px' }}
+                    whileInView={{ opacity: 1, fontSize: '80px' }}
+                    className='container__h1'>PERSONAL TRAINERS</motion.h1>
+                <motion.p
+                    initial={{ opacity: 0, fontSize: '0px' }}
+                    whileInView={{ opacity: 1, fontSize: '20px' }}
+                    className='container__p'>Our trainers will help you achieve your goals!
                     <br></br>
-                    This is motivation, instructions, and much more.</p>
+                    This is motivation, instructions, and much more.</motion.p>
             </section>
 
             <nav className="container__main margin-top">
-                <i className='container__img'>
+                <motion.i
+                    initial={{ opacity: 0, x: -100 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    className='container__img'>
                     <h1 className='name'>Wiliam</h1>
                     <img src={trainer1} alt="t1" />
-                </i>
-                <i className='container__img'>
+                </motion.i>
+                <motion.i
+                    initial={{ opacity: 0, y: 100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    className='container__img'>
                     <h1 className='name'>Wiliam</h1>
                     <img src={trainer2} alt="t2" />
-                </i>
-                <i className='container__img'>
+                </motion.i>
+                <motion.i
+                    initial={{ opacity: 0, x: 100 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    className='container__img'>
                     <h1 className='name'>Wiliam</h1>
                     <img src={trainer3} alt="t3" />
-                </i>
+                </motion.i>
             </nav>
 
             <div className='beast-container'>
                 <section className='beast__section '>
-                    <h1 className='margin-bottom'>BEAST MODE</h1>
-                    <p className='margin-bottom'>Feel your power and turn into a real beast! In 'Beast' mode you push your
+                    <motion.h1
+                        initial={{ x: -100 }}
+                        whileInView={{ x: 0 }}
+                        className='margin-bottom'>BEAST MODE</motion.h1>
+                    <motion.p
+                        initial={{ x: -100 }}
+                        whileInView={{ x: 0 }}
+                        className='margin-bottom'>Feel your power and turn into a real beast! In 'Beast' mode you push your
                         limits: maximum intensity, relentless focus and absolute energy.
                         This mode is created for those who are ready to give 110%, overcome pain and become
                         stronger every second. Activate 'Beast' mode and prove that you are ready for real
-                        challenges!</p>
-                    <button className='margin-top '>Register</button>
+                        challenges!</motion.p>
+                    <motion.button
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        className='margin-top '>Register</motion.button>
                 </section>
             </div>
 
             <div className='programs-container'>
 
                 <section className='program-title-container '>
-                    <h1>Programs and Sections</h1>
-                    <p>A variety of workouts and activities for all fitness levels. <br></br>
-                        Find your ideal program and start the path to a healthy life</p>
+                    <motion.h1
+                        initial={{ opacity: 0, fontSize: '10px' }}
+                        whileInView={{ opacity: 1, fontSize: '80px' }}
+                    >Programs and Sections</motion.h1>
+                    <motion.p
+                        initial={{ opacity: 0, fontSize: '0px' }}
+                        whileInView={{ opacity: 1, fontSize: '20px', marginBottom: '20px' }}
+                    >A variety of workouts and activities for all fitness levels. <br></br>
+                        Find your ideal program and start the path to a healthy life</motion.p>
                 </section>
 
                 <section className='programs-wrapper '>

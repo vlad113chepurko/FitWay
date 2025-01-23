@@ -6,8 +6,6 @@
 
     text-align: center;
 
-    border: 1px solid red;
-
     @include flex();
     flex-direction: column;
 
@@ -71,7 +69,7 @@ textarea {
 
 .form button {
     width: 200px;
-    height: 50px;
+    height: 0px;
     text-align: center;
     font-size: 1.4rem;
     background-color: rgb(229, 183, 99);
@@ -86,5 +84,18 @@ textarea {
 
     &:active {
         background-color: rgb(161, 130, 72);
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .form {
+        width: 100%;
+    }
+
+
+
+    input {
+        width: 100%;
     }
 }

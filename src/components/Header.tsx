@@ -1,9 +1,13 @@
 import logo from '..//assets/logo_header.png';
 import main_logo from '../assets/logo_main.svg';
+import { motion } from "motion/react";
 
 export default function Header() {
     return (
-        <header>
+        <motion.header
+        initial={{opacity: 0}}
+        animate={{opacity: 1}}
+        >
             <div className='wrapper__header'>
                 <i className='logo__header'>
                     <img src={logo} alt="logo" />
@@ -18,6 +22,6 @@ export default function Header() {
             <i className='main-logo'>
                 <img src={main_logo} alt="main_logo" />
             </i>
-        </header>
+        </motion.header>
     );
 }

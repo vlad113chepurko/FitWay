@@ -19,14 +19,12 @@ header {
     height: auto;
     @include flex();
     flex-direction: row;
-    border: 1px solid red;
 }
 
 
 .logo__header {
     width: 50%;
     height: auto;
-    border: 1px solid green;
 }
 
 .logo__header img {
@@ -39,7 +37,6 @@ header {
     width: 50%;
     height: auto;
     padding: 20px;
-    border: 1px solid blue;
 
     @include flex();
     justify-content: flex-end;
@@ -64,8 +61,6 @@ header {
 
     display: flex;
     justify-content: flex-end;
-
-    border: 1px solid red;
 }
 
 .main-logo img {
